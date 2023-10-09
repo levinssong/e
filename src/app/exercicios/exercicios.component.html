@@ -1,0 +1,32 @@
+<main>
+    <article>
+    <p>olá mundo</p>
+    <p>{{frase}}</p>
+    </article>
+    <article>
+        <h1>Cinco noites no frederico - o filme:<a href="{{ link }}">clique</a></h1>
+    </article>
+    <article>
+        <h2>
+    <p [style.color]="cor" (click)="mudaCor()">me aperta :D</p>
+        </h2>
+    </article>
+    <article>
+        <h2>textos</h2>
+        <select #select (change)="setTexto(select.value)">
+            <option default>selecione um texto</option>
+            <option value="eu sempre volto">Willian affton</option>
+            <option value="a história nos mostra como a natureza expõe a loucura do homem">gojira</option>
+            <option value="モスラヤ　モスラ
+            ドゥンガン　カサクヤン
+            インドゥムウ
+            ルスト　ウィラードア
+            ハンバ　ハンバムヤン
+            ランダバン　ウンラダン
+            トゥンジュカンラー
+            カサクヤーンム">Mosura</option>
+            <option value="faça ou não faça tentativa não há">yoda</option>
+        </select>
+        <p>{{texto}}</p>
+    </article>
+</main>
